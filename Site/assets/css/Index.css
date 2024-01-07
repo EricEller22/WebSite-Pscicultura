@@ -4,6 +4,7 @@
     --secondary-color: #00244A;
     --third-color: #0082C8;
     --white-color: #FFF;
+    --black-color: #111;
     --gap: 30px;
 }
 
@@ -54,7 +55,7 @@ a {
     text-decoration: none;
 }
 p {
-    margin-bottom: 30px;    
+    margin-bottom: 10px;    
 }
 
 /*CLASSES*/
@@ -162,7 +163,7 @@ p {
     padding-bottom: 20px;
 }
 .produtos .carrosel .prod:hover {
-    box-shadow: -3px -3px 3px 0 #5c5c5c, 3px -3px 3px 0 #5c5c5c, -3px 3px 3px 0 #5c5c5c, 3px 3px 3px 0 #5c5c5c;
+    box-shadow: -3px -3px 3px 0 #000, 3px -3px 3px 0 #000, -3px 3px 3px 0 #000, 3px 3px 3px 0 #000;
     margin: -5px 0 -5px 0;
 }
 
@@ -203,9 +204,64 @@ p {
 
 
 /*FOOTER CONFIG*/
-footer .rodape{
+.footer-content {
     min-width: 100vw;
     height: 200px;
     background-color: var(--secondary-color);
+    color: var(--white-color);
 }
+.grid-footer{
+    display: grid;
+    max-width: 1200px;
+    min-height: 200px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+}
+.content{
+    padding: 20px 0 0 0;
 
+}
+.content h2{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.content p{
+    font-size: 15px;
+    margin: 0;
+}
+.content-description{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+i{
+    margin: 0 5px 0 0;
+    font-size: 25px;
+}
+.content-description span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.fa-pix, .fa-cc-mastercard, .fa-cc-visa, .fa-money-bill-1{
+    font-size: 40px;
+    cursor: pointer;
+}
+.icon-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+.icon-container:hover::before {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
