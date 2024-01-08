@@ -1,3 +1,14 @@
+//Animation config
+const observer = new IntersectionObserver(entries => {
+  console.log(entries);
+  entries[0].target.classList.add('init-hidden-off')
+}, {threshold: [0, .5, 1]})
+
+Array.from(document.querySelectorAll('.init-hidden')).forEach(element =>{
+  observer.observe(element)
+})
+
+//Slides config
 let count = 1;
 let intervalId;
 
@@ -26,3 +37,9 @@ document.querySelectorAll('input[type="radio"]').forEach(function(radio) {
     startInterval(); // Reinicia o intervalo após a interação manual
   });
 });
+
+
+
+
+
+

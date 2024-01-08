@@ -376,4 +376,11 @@ i{
     border-radius: 5px;
     font-size: 12px;
 }
-
+.init-hidden{
+    opacity: 0;
+    transition: 0.5s;
+}
+.init-hidden-off{
+    opacity: 1;
+    transition: 1s;
+}
