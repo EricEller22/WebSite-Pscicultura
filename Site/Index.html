@@ -38,15 +38,57 @@
         <div class="menu-space"></div>
 
         <main>
-            <section id="carrosel" class="inicio carrosel-section main-bg">
-                <div class="main-content">
-                    <h1 class="titulo">carrosel</h1>
-                </div>
-            </section> 
+            <section>
+            <div id="slider" class="slider ">
+                <div class="slides">
+                    <!--Radio Buttons-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!--Radio Buttons-->
+                    
+                    <!--Slides Image-->
+                    <div class="slide first">
+                        <img src="./assets/Images/wallpaper1.jpg" alt="Pastel Tilapia">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Images/wallpaper2.jpg" alt="Pastel Tilapia">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Images/wallpaper3.jpg" alt="Pastel Tilapia">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/Images/wallpaper4.jpg" alt="Pastel Tilapia">
+                        <div class="overlay"></div>
+                    </div>
+                    <!--Slides Image-->
+
+                    <!--Navigation auto-->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!--Navigation auto-->
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn 1"></label>
+                        <label for="radio2" class="manual-btn 2"></label>
+                        <label for="radio3" class="manual-btn 3"></label>
+                        <label for="radio4" class="manual-btn 4"></label>
+                    </div>
+                </div>          
+            </div> 
+        </section>
 
             <section id="home" class="inicio section white-bg">
                 <div class="main-content">
-                    <h1 class="titulo">Projeto Peixe Vivo</h1>
+                    <h2 class="titulo">Projeto Peixe Vivo</h2>
                     <p>
                         No mercado de criação, processamento, abate e venda de tilápias desde 2008, 
                         o Projeto Peixe Vivo, ou, Piscicultura Barra de Mangaraí como é popularmente conhecida, 
@@ -188,7 +230,8 @@
                         cerca de aproximadamente 40km da capital Vitória, entre o litoral e a região serrana do estado. 
                     </p>
                     <div class="img-map">
-                        <img src="./assets/Images/map-for-site.png" width="800" height="600" alt="Mapa da localização">
+                        <!--<img src="./assets/Images/map-for-site.png" width="800" height="600" alt="Mapa da localização">-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.9738450519383!2d-40.43956651164323!3d-20.136229824803088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb827645aa37f97%3A0x9acbf49c756e1dcb!2sCriador%20de%20til%C3%A1pia!5e0!3m2!1spt-BR!2sbr!4v1704730817308!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                     <p>
                         Para você que está em Vitória ou serra é bem simples, basta seguir a antiga reta do aeroporto e pegar 
@@ -258,5 +301,6 @@
             </div>
         </footer>
         
+        <script src="./assets/Javascript/script.js"></script>
     </body>
 </html>
