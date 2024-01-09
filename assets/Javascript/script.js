@@ -38,8 +38,31 @@ document.querySelectorAll('input[type="radio"]').forEach(function(radio) {
   });
 });
 
+//Modalconfig
+/*
+const button = document.querySelector(".botao-produto");
+const closeButton = document.querySelector("dialog .close-modal");
+const modal = document.querySelector("dialog");
 
+button.onclick = function() {
+  modal.showModal()
+}
 
+closeButton.onclick = function(){
+  modal.close()
+}
+*/
 
+// Função para abrir o modal
+function openModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.showModal();
+}
+
+// Função para fechar o modal
+function closeModal(modalId) {
+  const modal = document.getElementById(modalId);
+  modal.close();
+}
 
 

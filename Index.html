@@ -112,8 +112,10 @@
 
             <section id="products" class="produtos section main-bg ">
                 <div class="main-content init-hidden">
+
                     <h2 class="subtitulo">Produtos</h2>
                     <p>Um pouco do que produzimos por aqui!</p>
+
                     <div class="carrosel">
                         <div class="prod">
                             <div class="imagem-produto">
@@ -122,7 +124,7 @@
                             <div class="legenda-produto">
                                 <p>Filé de tilapia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto"  onclick="openModal('description-one')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
@@ -132,7 +134,7 @@
                             <div class="legenda-produto">
                                 <p>Postas de tilapia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-two')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
@@ -142,7 +144,7 @@
                             <div class="legenda-produto">
                                 <p>Tilapia limpa</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-three')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
@@ -152,7 +154,7 @@
                             <div class="legenda-produto">
                                 <p>Pastel de tilápia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-four')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
@@ -162,58 +164,227 @@
                             <div class="legenda-produto">
                                 <p>Kibe de tilapia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-five')">Ver mais</button>
                         </div>
                         <div class="prod">
                             <div class="imagem-produto">
-                                <img src="./assets/Images/file-tilapia.jpg" alt="file tilapia">
+                                <img src="./assets/Images/pizza.jpg" alt="file tilapia">
                             </div>
                             <div class="legenda-produto">
-                                <p>Filé de tilapia</p>
+                                <p>Pizza de tilapia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-six')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
                             <div class="imagem-produto">
-                                <img src="./assets/Images/postas-tilapia.jpg" alt="postas tilapia">
+                                <img src="./assets/Images/empada.jpg" alt="postas tilapia">
                             </div>
                             <div class="legenda-produto">
-                                <p>Postas de tilapia</p>
+                                <p>Empada de tilapia</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-seven')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
                             <div class="imagem-produto">
-                                <img src="./assets/Images/tilapia-limpa.jpg" alt="tilapia limpa">
+                                <img src="./assets/Images/pintado.jpg" alt="tilapia limpa">
                             </div>
                             <div class="legenda-produto">
-                                <p>Tilapia limpa</p>
+                                <p>Pintado</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-eight')">Ver mais</button>
                             
                         </div>
                         <div class="prod ">
                             <div class="imagem-produto">
-                                <img src="./assets/Images/pastel-tilapia.jpg" alt="pastel tilapia">
+                                <img src="./assets/Images/tambaqui.jpg" alt="pastel tilapia">
                             </div>
                             <div class="legenda-produto">
-                                <p>Pastel de tilápia</p>
+                                <p>Tambaqui</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-nine')">Ver mais</button>
                             
                         </div>
                         <div class="prod">
                             <div class="imagem-produto">
-                                <img src="./assets/Images/kibe-tilapia.jpg" alt="kibe tilapia">
+                                <img src="./assets/Images/panga.jpg" alt="kibe tilapia">
                             </div>
                             <div class="legenda-produto">
-                                <p>Kibe de tilapia</p>
+                                <p>Panga</p>
                             </div>
-                            <button class="botao-produto">Ver mais</button>
+                            <button class="botao-produto" onclick="openModal('description-ten')">Ver mais</button>
                         </div>
                     </div>
+
+                    <!--Mais informações sobre os produtos-->
+                    <dialog id="description-one" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Filé de tilápia</h3>
+                                <br>
+                                <p>Filé de tilápia é nosso cargo chefe, e o queridinho da casa!</p>
+                                <br>
+                                <p>Utilizado para diversas receitas, ele é rico fonte de fibras e pode ser utilizado nas mais variadas receitas</p>
+                            </div>
+                            
+                            <img src="./assets/Images/file-tilapia.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-one')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-two" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Postas de tilápia</h3>
+                                <br>
+                                <p>As postas de tilápia, são o peixe praticamente pronto para ser servido!</p>
+                                <br> 
+                                <ul>
+                                    <p>Métodos de preparo:</p>
+                                    <li>- Moqueca</li>
+                                    <li>- Frito</li>
+                                </ul>
+                            </div>
+                            
+                            <img src="./assets/Images/postas-tilapia.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-two')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-three" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Tilápia limpa</h3>
+                                <br>
+                                <p>A tilápia limpa se trata do estado mais in-natura que você pode encontrar o peixe aqui.</p>
+                                <br> 
+                                <ul>
+                                    <p>Métodos de preparo:</p>
+                                    <li>- Moqueca</li>
+                                    <li>- Frito</li>
+                                    <li>- Assado</li>
+                                </ul>
+                            </div>
+                            
+                            <img src="./assets/Images/tilapia-limpa.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-three')"><i class="fa-solid fa-x"></i></a>
+                    </dialog > 
+
+                    <dialog id="description-four" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Pastel de tilápia</h3>
+                                <br>
+                                <p>Preparado por nós, este é concerteza um dos melhores aperitivos que existe!</p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/pastel-tilapia.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-four')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-five" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Kibe de tilápia</h3>
+                                <br>
+                                <p>Preparado por nós, este é concerteza um dos melhores aperitivos que existe!</p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/kibe-tilapia.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-five')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-six" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Pizza de tilápia</h3>
+                                <br>
+                                <p>Preparado por nós, este é concerteza um dos melhores aperitivos que existe!</p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/pizza.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-six')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+                    
+                    <dialog id="description-seven" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Empada de tilápia</h3>
+                                <br>
+                                <p>Preparado por nós, este é concerteza um dos melhores aperitivos que existe!</p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/empada.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-seven')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+                   
+                    <dialog id="description-eight" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Pintado</h3>
+                                <br>
+                                <p></p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/pintado.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-eight')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-nine" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Tambaqui</h3>
+                                <br>
+                                <p></p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/tambaqui.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-nine')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+                    <dialog id="description-ten" class="description-modal">
+                        <div class="modal-grid">
+                            <div class="modal-content">
+                                <h3>Panga</h3>
+                                <br>
+                                <p></p>
+                                <br> 
+                            </div>
+                            
+                            <img src="./assets/Images/panga.jpg" alt="Filé tilápia">
+                        </div>
+                        <a class="close-modal" onclick="closeModal('description-ten')"><i class="fa-solid fa-x"></i></a>
+                    </dialog >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                 </div>
             </section>
@@ -229,14 +400,6 @@
                         <!--<img src="./assets/Images/map-for-site.png" width="800" height="600" alt="Mapa da localização">-->
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1872.9738450519383!2d-40.43956651164323!3d-20.136229824803088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb827645aa37f97%3A0x9acbf49c756e1dcb!2sCriador%20de%20til%C3%A1pia!5e0!3m2!1spt-BR!2sbr!4v1704730817308!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <p>
-                        Para você que está em Vitória ou serra é bem simples, basta seguir a antiga reta do aeroporto e pegar 
-                        a rodovia do contorno sentido cariacica, pegando a rodovia ES-120 próximo à Terca.
-                    </p>
-                    <p>
-                        Ainda mais fácil é para quem vem de cariacica sede ou região de campo grande, 
-                        bastando apenas pegar a ES-080 e seguir até a localização.
-                    </p>
                 </div>
             </section> 
 
