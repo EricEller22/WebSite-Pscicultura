@@ -16,7 +16,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; 
     scroll-behavior: smooth;
 }
 
@@ -185,7 +185,7 @@ p {
 .manual-navigation{
     position: absolute;
     width: 100%;
-    margin-top: 700px;;
+    margin-top: 70vh;
     display: flex;
     justify-content: center;
 }
@@ -225,7 +225,8 @@ p {
 .navigation-auto{
     position: absolute;
     width: 100%;
-    margin-top: 700px;
+    margin: 0 auto;
+    margin-top: 70vh;
     display: flex;
     justify-content: center;
 }
@@ -397,7 +398,7 @@ dialog{
     max-height: 400px;
     max-width: 500px;
     margin: 0 auto ;
-    margin-top: 250px;
+    margin-top: 25vh;
     background-color: var(--white-color); 
     color: var(--third-color);   
     border-radius: 10px;
@@ -433,6 +434,7 @@ dialog a{
     transition: all 300ms ease-in-out;
     color: #ccc;
 }
+
 dialog .fa-x:hover{
     color: var(--white-color);
 }
@@ -442,7 +444,6 @@ dialog::backdrop{
 .modal-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 5px;
 }
 .modal-grid img{
     width: 200%;
@@ -468,6 +469,9 @@ ul p{
     text-align: left;
     padding-left: 10px;
 }
+.modal-content .observation{
+    font-size: 10px;
+}
 .subtitle{
     margin-top: -10px;
     border-bottom: 1px solid #ccc;
@@ -488,7 +492,14 @@ ul p{
     margin-left: 10px;
     font-size: 15px;
 }
-
+.list a{
+    position: relative;
+    color: rgba(17, 17, 17, 0.61);
+}
+.list a:hover{
+    color: var(--black-color);
+    text-decoration: underline;
+}
 
 /*Midia Queriess*/
 @media (max-width: 1040px) {
