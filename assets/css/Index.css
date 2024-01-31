@@ -608,4 +608,13 @@ ul p{
         margin-left: 5px;
         font-size: 12px;
     }
+    .subtitle span{
+        font-size: 10px;
+    }
+    .subtitle i{
+        margin-left: 5px;
+    }
+    .observation{
+        display: none;
+    }
 }
